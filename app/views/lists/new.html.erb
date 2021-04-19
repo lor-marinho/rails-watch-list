@@ -1,1 +1,6 @@
-<h1>This is the list new/form.</h1>
+<h1>Create a new LIST OF MOVIES TO WATCH:</h1>
+
+<%= simple_form_for (@list) do |f| %>
+  <%= f.input :name %>
+  <%= f.submit "Create", class: "btn btn-primary" %>
+<% end %>
